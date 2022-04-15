@@ -5,32 +5,59 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Chess</title>
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
 
-  <!-- HEADER PART -->
-
-  <header class="">
-    <section class="">
-
-    </section>
-  </header>
 
   <!-- MAIN PART  -->
 
   <main>
+    <section class="chess">
+      <div class="container">
+        <div class="chess__main">
+          <div class="chess__box">
 
+            <ul class="chess__blist">
+              <li class="chess__bitem" id="king">
+                <img class="chess__bimg" src="img/king.svg" alt="king">
+              </li>
+              <li class="chess__bitem" id="queen">
+                <img class="chess__bimg" src="img/queen.svg" alt="queen">
+              </li>
+              <li class="chess__bitem" id="castle">
+                <img class="chess__bimg" src="img/castle.svg" alt="castle">
+              </li>
+              <li class="chess__bitem" id="knight">
+                <img class="chess__bimg" src="img/knight.svg" alt="knight">
+              </li>
+              <li class="chess__bitem" id="bishop">
+                <img class="chess__bimg" src="img/bishop.svg" alt="bishop">
+              </li>
+              <li class="chess__bitem" id="pawn">
+                <img class="chess__bimg" src="img/pawn.svg" alt="pawn">
+              </li>
+            </ul>
+
+            <ul class="chess__list" id="listbox">
+
+            </ul>
+
+            <div class="chess__xy">
+              <span class="chess__y" id="x">x = 5</span>
+              <span class="chess__y" id="y">y = 8</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- FOOTER PART  -->
-
-  <footer class="footer">
-
-  </footer>
-
+  <script src="js/chessObj.js"></script>
   <script src="js/main.js"></script>
 </body>
 

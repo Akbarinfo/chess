@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #fff;
+  background-image: radial-gradient(circle, #ece3b8, #d8c187, #c79e59, #b67a2f, #a65500);
   font-family: sans-serif;
   font-weight: 400;
   min-height: 100vh;
@@ -44,6 +44,123 @@ html {
 }
 
 /* MAIN PART  */
+.chess__main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chess__box {
+  width: 704px;
+  height: 704px;
+  border: 2px solid #a65500;
+}
+
+.chess__list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.chess__item {
+  width: 87.5px;
+  height: 87.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #b58863;
+  background-image: url(/img/wood-black.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #a65500;
+}
+
+.chess__item:hover {
+  -webkit-box-shadow: 0px 0px 31px 13px #ff2929 inset;
+          box-shadow: 0px 0px 31px 13px #ff2929 inset;
+}
+
+.chess__xy {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+}
+
+.chess__y {
+  display: block;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  color: #a65500;
+  padding: 7px 7px;
+  margin-bottom: 5px;
+}
+
+.chess__blist {
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: none;
+}
+
+.chess__bitem {
+  width: 90px;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 15px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.chess__bitem:hover {
+  background-color: #a65500;
+}
+
+.chess__bimg {
+  width: 100%;
+  height: 100%;
+}
+
+.green {
+  -webkit-box-shadow: 0px 0px 31px 13px green inset;
+          box-shadow: 0px 0px 31px 13px green inset;
+}
+
 /* FOOTER PART */
 .footer {
   background-color: #fff;
