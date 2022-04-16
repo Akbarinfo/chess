@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 *,
 *::after,
@@ -10,7 +11,7 @@
 
 body {
   background-image: radial-gradient(circle, #ece3b8, #d8c187, #c79e59, #b67a2f, #a65500);
-  font-family: sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   min-height: 100vh;
   display: -webkit-box;
@@ -60,7 +61,10 @@ html {
 .chess__box {
   width: 704px;
   height: 704px;
-  border: 2px solid #a65500;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 2000;
+          perspective: 2000;
 }
 
 .chess__list {
@@ -71,6 +75,14 @@ html {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style-type: none;
+  border: 2px solid #a65500;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.chess__3d {
+  -webkit-transform: rotateX(55deg) scale(1.2);
+          transform: rotateX(55deg) scale(1.2);
 }
 
 .chess__item {
@@ -97,15 +109,39 @@ html {
           box-shadow: 0px 0px 31px 13px #ff2929 inset;
 }
 
+.chess__back {
+  background-color: #f0d9b5;
+  background-image: url(/img/wood-white.jpeg);
+}
+
 .chess__xy {
   position: absolute;
-  top: 15%;
+  top: 12%;
   right: 5%;
+}
+
+.chess__btn {
+  background-color: #fff;
+  border: #fff;
+  border-radius: 2px;
+  font-size: 21px;
+  font-weight: 600;
+  color: #a65500;
+  padding: 10px;
+  margin-bottom: 15px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.chess__btn:hover {
+  background-color: #ffffff9d;
 }
 
 .chess__y {
   display: block;
   background-color: #fff;
+  border-radius: 2px;
   font-size: 18px;
   font-weight: 600;
   color: #a65500;
@@ -156,9 +192,13 @@ html {
   height: 100%;
 }
 
+.chess__activ {
+  background-color: #b58863;
+}
+
 .green {
-  -webkit-box-shadow: 0px 0px 31px 13px green inset;
-          box-shadow: 0px 0px 31px 13px green inset;
+  -webkit-box-shadow: 0px 0px 31px 13px green inset !important;
+          box-shadow: 0px 0px 31px 13px green inset !important;
 }
 
 /* FOOTER PART */

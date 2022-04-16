@@ -347,3 +347,34 @@ let chessObj = [
     },
   ],
 ]
+
+
+
+// let tower = document.querySelector('.tower');
+// tower.addEventListener('click', () => {
+//   chessDiv.forEach((item) => {
+//     cheesboard.forEach((elem, i) => {
+//         item.addEventListener('mouseover', () => {
+//             if (item.id == i) {
+//               chessDiv.forEach((el, id) => {
+//                     if (el.className.includes(`Y=${elem.y}`)) {
+//                         el.classList.add('green')
+//                     }
+//                     if (el.className.includes(`X=${elem.x}`)) {
+//                         el.classList.add('green')
+//                     }
+//                 })
+
+//             }
+//         })
+//         item.addEventListener("mouseout", () => {
+//             if (item.id == i) {
+//               chessDiv.forEach((el, id) => {
+//                         el.classList.remove('green')
+//                 })
+
+//             }
+//         })
+//     })
+//   })
+// })
